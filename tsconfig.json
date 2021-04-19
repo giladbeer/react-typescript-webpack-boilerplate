@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+      "allowSyntheticDefaultImports": true,
+      "esModuleInterop": true,
+      "jsx": "react",
+      "module": "esnext",
+      "moduleResolution": "node",
+      "noImplicitAny": true,
+      "outDir": "./dist/",
+      "preserveConstEnums": true,
+      "removeComments": true,
+      "sourceMap": true,
+      "target": "es6",
+      "strict": true,
+      "noUnusedLocals": false, //@TODO: turn back on, find better solution
+      "allowUnreachableCode": false,
+      "strictNullChecks": true,
+      "skipLibCheck": true,
+      "baseUrl": ".",
+      "lib": [
+        "es2019",
+        "DOM"
+      ]
+    },
+    "include": [
+      "src/**/*.ts",
+      "src/**/*.tsx"
+    ],
+    "exclude": [
+      "node_modules",
+      "dist",
+      "**/*.js",
+      "*.js"
+    ]
+}

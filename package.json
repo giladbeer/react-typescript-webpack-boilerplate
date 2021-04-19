@@ -1,0 +1,55 @@
+{
+  "name": "react-typescript-webpack-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "jest": {
+    "verbose": true
+  },
+  "scripts": {
+    "build:staging": "webpack --config=webpack.config.prod.js --env staging",
+    "build:prod": "webpack --config=webpack.config.prod.js --env production",
+    "start": "webpack serve --config=webpack.config.dev.js",
+    "check-types": "tsc --noemit",
+    "test": "jest",
+    "lint": "yarn check-types && eslint \"*/**/*.{js,ts,tsx}\"",
+    "lint:fix": "yarn check-types && eslint \"*/**/*.{js,ts,tsx}\" --quiet --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0",
+    "terser-webpack-plugin": "^5.1.1"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.3",
+    "@types/react-router-dom": "^5.1.7",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "css-loader": "^5.2.1",
+    "dotenv": "^8.2.0",
+    "dotenv-webpack": "^7.0.2",
+    "eslint": "^7.24.0",
+    "eslint-config-prettier": "^8.2.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "file-loader": "^6.2.0",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.4.1",
+    "prettier": "^2.2.1",
+    "source-map-loader": "^2.0.1",
+    "ts-loader": "^8.1.0",
+    "typescript": "^4.2.4",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.32.0",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
